@@ -1,0 +1,20 @@
+<head>
+  <title>web-app</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <div>{{> loginButtons}}</div>
+    <div>
+    <form>
+        <input name="google" type="text" placeholder="" />
+    </form>
+    </div>
+    {{> map}}
+</body>
+
+<template name="map">
+    <div class="map-container">
+        {{> googleMap name="map" options=mapOptions}}
+    </div>
+</template>
