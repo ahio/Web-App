@@ -44,8 +44,8 @@ Template.map.created = function() {
 		$('form').on('submit', function (e) {
 			var query = $('#search').val();
 			var url = "https://api.foursquare.com/v2/venues/search?ll=" + lat + ', ' + lng +
-			"&client_id=CLIENT_ID" +
-			"&client_secret=CLIENT_SECRET" +
+			"&client_id=LCSTXUE4XPRG4JQJEDSCXAE0JSHOFN0A4GGEPNCURBI0CG4U" +
+			"&client_secret=XF1YNPHMTAPL0JIJDJKA25YEHCXDUTVKF2O4V441FBBIIXML" +
 			"&v=20150515&radius=" + radius +
 			"&locale=en" + "&query=" + query;
 			$.ajax( url )
@@ -76,11 +76,11 @@ Template.map.created = function() {
 						venues.push([name, city, address, latitude, longitude]);
                         //add data to table
 						$('#venues').append('<tr>' +
-											'<td>' + name + '</td>' +
-											'<td>' + city + '</td>' +
-											'<td>' + address+ '</td>' +
-											'<td>' + latitude + '</td>' +
-											'<td>' + longitude + '</td>' +
+											'<td class="venue-name">' + name + '</td>' +
+											'<td class="venue-city">' + city + '</td>' +
+											'<td class="venue-address">' + address+ '</td>' +
+											'<td class="venue-lat">' + latitude + '</td>' +
+											'<td class="venue-lng">' + longitude + '</td>' +
 											'</tr>');
 					}
 				})
