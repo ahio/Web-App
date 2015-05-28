@@ -1,0 +1,23 @@
+<template name="mapView">
+    <div class="loginButtons">{{> loginButtons}}</div>
+    {{> queriesList}}
+
+    <form>
+        <div class="form-group">
+            <input id="search" class="search form-control" type="text" placeholder="Type to search" />
+        </div>
+    </form>
+
+    {{> map}}
+
+    <div>
+        <span class="count"></span>
+        <span class="venues"> Venues</span>
+        <span>
+            <button id="exportCSV" type="button" class="btn btn-primary">Export CSV</button>
+            <a id="dataLink" download="venues.csv" href="data:Application/octet-stream,"></a>
+        </span>
+    </div>
+
+    {{> venueList}}
+</template>
