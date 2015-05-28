@@ -1,0 +1,19 @@
+<template name="queriesList">
+    <div class="table-queries">
+        <table id="queries" class="table table-striped">
+            <thead>
+            <tr>
+                <th></th>
+                <th class="query-h">Query</th>
+                <th class="lat-h">Latitude</th>
+                <th class="lng-h">Longitude</th>
+                <th class="radius-h">Searching radius</th>
+                <th class="date-h">Date</th>
+            </tr>
+            </thead>
+            {{#each queries}}
+                {{> queryItem}}
+            {{/each}}
+        </table>
+    </div>
+</template>

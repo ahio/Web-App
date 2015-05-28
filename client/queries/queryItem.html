@@ -1,0 +1,14 @@
+<template name="queryItem">
+<tbody>
+    <tr>
+        {{#if own}}
+        <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+        <td class="query">{{query}}</td>
+        <td class="lat">{{lat}}</td>
+        <td class="lng">{{lng}}</td>
+        <td class="radius">{{radius}}</td>
+        <td class="date">{{date}}</td>
+        {{/if}}
+    </tr>
+</tbody>
+</template>
