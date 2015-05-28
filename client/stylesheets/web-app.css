@@ -1,0 +1,200 @@
+body {
+    background: #EBEBEB;
+}
+.map-container {
+    padding: 10px 50px 30px;
+    width: 100%;
+    height: 530px;
+}
+input {
+    margin: 0 0 0 100px;
+}
+.loginButtons {
+    display: block;
+    list-style: none;
+    text-align: right;
+}
+.dropdown {
+    top: 10px;
+    right: 20px;
+}
+.dropdown-menu {
+    right: 0;
+    left: 1055px;
+}
+
+#queries {
+    width: 90%;
+}
+.table-queries {
+    margin: 25px -87px 0 51px;
+}
+.search {
+    width: 85%;
+}
+.form-group {
+    margin: 47px -68px 1px -50px;
+}
+.count {
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.venues {
+    margin-left: 6px;
+    margin-right: 955px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.table-venues {
+    padding: 25px 48px 0 55px;
+}
+tr .query-h, tr .query {
+    width: 310px;
+    padding-left: 10px;
+}
+tr .lat-h, tr .lat {
+    width: 370px;
+    padding-left: 10px;
+}
+tr .lng-h, tr .lng {
+    width: 228px;
+    padding-left: 10px;
+}
+tr .radius-h, tr .radius {
+    width: 260px;
+    padding-left: 10px;
+    text-align: center;
+}
+tr .date-h, tr .date {
+    width: 200px;
+    padding-left: 10px;
+}
+.glyphicon:hover {
+    cursor: pointer;
+}
+
+thead tr {
+    font-size: 17px;
+}
+
+
+.venue-name-h, .venue-name {
+    width: 40%;
+}
+.venue-city-h, .venue-city {
+    width: 15%;
+}
+.venue-address-h, .venue-address {
+    width: 15%;
+}
+.venue-lat-h, .venue-lat {
+    width: 15%;
+}
+.venue-lat-h {
+    text-align: center;
+}
+.venue-lng-h, .venue-lng {
+    width: 15%;
+}
+.venue-lng-h {
+    text-align: center;
+}
+
+
+/*LOADER*/
+/*-------------------------------------*/
+.loader {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    zoom: 1.7;
+}
+
+.circular {
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+
+.path {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124;
+    }
+}
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124;
+    }
+}
+@-webkit-keyframes color {
+    100%, 0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%, 90% {
+        stroke: #ffa700;
+    }
+}
+@keyframes color {
+    100%, 0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%, 90% {
+        stroke: #ffa700;
+    }
+}
