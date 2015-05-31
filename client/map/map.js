@@ -44,8 +44,8 @@ Template.map.created = function() {
 		$('form').on('submit', function (e) {
 			var query = $('#search').val();
 			var url = "https://api.foursquare.com/v2/venues/search?ll=" + lat + ', ' + lng +
-			"&client_id=LCSTXUE4XPRG4JQJEDSCXAE0JSHOFN0A4GGEPNCURBI0CG4U" +
-			"&client_secret=XF1YNPHMTAPL0JIJDJKA25YEHCXDUTVKF2O4V441FBBIIXML" +
+			"&client_id=CLIENT_ID" +
+			"&client_secret=CLIENT_SECRET" +
 			"&v=20150515&radius=" + radius +
 			"&locale=en" + "&query=" + query;
 			$.ajax( url )
